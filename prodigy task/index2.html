@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card" role="application" aria-label="Tic Tac Toe game">
+    <header>
+      <h1>Tic-Tac-Toe</h1>
+      <div class="controls">
+        <button class="btn" id="modeBtn">Mode: 2-Player</button>
+        <button class="btn primary" id="resetBtn">New Game</button>
+      </div>
+    </header>
+
+    <div class="layout">
+      <section class="board-wrap">
+        <div class="status" id="status">Player X turn</div>
+        <div class="board" id="board"></div>
+        <footer>
+          <small>Tip: use click / keys 1–9. “U” for undo, “R” for reset.</small>
+          <small id="last">Ready</small>
+        </footer>
+      </section>
+
+      <aside class="sidebar">
+        <div class="score">
+          <div class="item">
+            <div class="muted">X</div>
+            <b id="scoreX">0</b>
+          </div>
+          <div class="item">
+            <div class="muted">Draws</div>
+            <b id="scoreD">0</b>
+          </div>
+          <div class="item">
+            <div class="muted">O</div>
+            <b id="scoreO">0</b>
+          </div>
+        </div>
+        <div style="margin-top:8px" class="muted">Controls</div>
+        <div style="display:flex; gap:8px; margin-top:8px">
+          <button class="btn" id="undoBtn">Undo</button>
+          <button class="btn" id="clearScores">Clear Scores</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

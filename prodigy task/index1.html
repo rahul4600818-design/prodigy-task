@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Weather Forecast</h2>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button id="getWeatherBtn">Get Weather</button>
+        <div class="weather" id="weather"></div>
+    </div>
+    .cloud {
+  animation: moveClouds 20s linear infinite;
+}
+@keyframes moveClouds {
+  from { left: -200px; }
+  to { left: 100%; }
+}
+
+
+    <script src="script.js"></script>
+</body>
+</html>
